@@ -5,7 +5,6 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "serve": "npm run build:watch & firebase serve --only functions",
-    "serve:watch:prefix": "PREFIX=/my-demo/us-central1/ npm run build:watch & firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
@@ -16,18 +15,19 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "1.19.0",
     "cors": "2.8.5",
-    "express": "^4.16.4",
+    "express": "4.16.4",
     "firebase-admin": "7.3.0",
     "firebase-functions": "2.3.1",
     "firebase-functions-helper": "0.7.0",
-    "firebase-tools": "^6.10.0"
+    "firebase-tools": "6.10.0"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.1.6",
-    "tslint": "^5.12.0",
-    "typescript": "^3.2.2"
+    "domakey": "0.0.5",
+    "firebase-functions-test": "0.1.6",
+    "tslint": "5.12.0",
+    "typescript": "3.2.2"
   },
   "private": true
 }
